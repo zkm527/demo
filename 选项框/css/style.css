@@ -1,0 +1,78 @@
+.but {
+	border-radius: 30px;
+	font-size: 30px;
+	border: 1px solid black;
+}
+
+.button {
+	height: 300px;
+	width: 550px;
+	margin: 0 auto;
+	line-height: 300px;
+}
+#fornt:checked ~ .but[for="fornt"]{
+	background: #ccc;
+}
+#fornt:checked ~ .li{
+	transition-duration: 1s;
+	transform-style: preserve-3d;
+	transform: rotate3d(0,0,0,0deg);
+}
+#back:checked ~ .but[for="back"]{
+	background: #ccc;
+}
+#back:checked ~ .li{
+	transition-duration: 1s;
+	transform-style: preserve-3d;
+	transform: rotate3d(0,1,0,180deg);
+}
+#left:checked ~ .but[for="left"]{
+	background: #ccc;
+}
+#left:checked ~ .li{
+	transition-duration: 1s;
+	transform-style: preserve-3d;
+	transform: rotate3d(0,1,0,90deg);
+}
+#right:checked ~ .but[for="right"]{
+	background: #ccc;
+}
+#right:checked ~ .li{
+	transition-duration: 1s;
+	transform-style: preserve-3d;
+	transform: rotate3d(0,1,0,-90deg);
+}
+#top:checked ~ .but[for="top"]{
+	background: #ccc;
+}
+#top:checked ~ .li{
+	transition-duration: 1s;
+	transform-style: preserve-3d;
+	transform: rotate3d(1,0,0,-90deg);
+}
+#bottom:checked ~ .but[for="bottom"]{
+	background: #ccc;
+}
+#bottom:checked ~ .li{
+	transition-duration: 1s;
+	transform-style: preserve-3d;
+	transform: rotate3d(1,0,0,90deg);
+}
+#big:checked ~ .but[for="big"]{
+	background: #ccc;
+}
+#big:checked ~ .li{
+	transition-duration: 1s;
+	transform-style: preserve-3d;
+	transform: scale(2)
+}
+#small:checked ~ .but[for="small"]{
+	background: #ccc;
+}
+#small:checked ~ .li{
+	transition-duration: 1s;
+	transform-style: preserve-3d;
+	transform: scale(0.5)
+}
+
+

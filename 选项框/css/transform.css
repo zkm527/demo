@@ -1,0 +1,51 @@
+body{
+	perspective:1000px;
+}
+.li{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+.img{
+	width: 200px;
+	height: 200px;
+	background-size: 100% 100%;
+	position: absolute;
+	opacity: 0.6;
+}
+.li:hover{
+	transition-duration: 3s;
+	transform-style: preserve-3d;
+	transform: rotate3d(1,0,0,90deg);
+}
+
+.right {
+	background-image: url(../img/img1.jpeg);
+	transform: rotatey(90deg) translateZ(100px);
+}
+
+.left {
+	background-image: url(../img/img2.jpeg);
+	transform: rotatey(90deg) translateZ(-100px);
+}
+
+.top {
+	background-image: url(../img/img3.jpeg);
+	transform: rotatex(90deg) translateZ(100px);
+}
+
+.bottom {
+	background-image: url(../img/img4.jpeg);
+	transform: rotatex(-90deg) translateZ(100px);
+}
+
+.fornt {
+	background-image: url(../img/img5.jpeg);
+	transform: translateZ(100px);
+}
+
+.back {
+	background-image: url(../img/img6.jpeg);
+	transform: translateZ(-100px);
+}
+
